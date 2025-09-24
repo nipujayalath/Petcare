@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*-----Header------*/
 .nav-p{
     text-align: center;
     letter-spacing: 10px;
@@ -41,8 +43,10 @@ nav a:hover{
     background-color: #963939;
 }
 
+/*-----Home page-----*/
+
 .container{
-    background-image: url("images/image03.jpg");
+    background-image: url("image03.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -76,10 +80,11 @@ nav a:hover{
       color: white;
 }
 
+/*------Footer------*/
+
 footer {
     min-width: 300px;
     background-color: black;
-    /*justify-content: space-between;*/
     padding: 0;
     color: white;
     margin: 0;
@@ -128,10 +133,10 @@ footer {
     font-style: italic;
     font-family: 'Satisfy', cursive;
 }
+
+/*-----Information Page----*/
+
 .info-icons{
-    /*align-items: center;
-    gap: 10px;
-    margin-bottom: 12px;*/
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
@@ -162,7 +167,6 @@ footer {
     background-repeat: no-repeat;
     margin-right: 8px;
     vertical-align: middle;
-    /*margin-bottom: 15px;*/
     border-radius: 100%;
     background-size: 320px 220px;
 }
@@ -523,4 +527,5 @@ form button{
     font-size: 16px;
     box-sizing: border-box;
     letter-spacing: 5px;
+
 }
