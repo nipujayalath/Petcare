@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Dog Hostel</title>
+        <link rel="icon" type="image/jpg" href="image05.jpg">
+        <link rel="stylesheet" href="petstyles.css">
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <div class="form-container">
+            <div class="form-box">
+                <form onsubmit="return showPopup()">
+                    <h3 class="fancy">Dog Hostel</h3>
+                    <hr>
+                    <label for="check-in">Check In Date:</label>
+                    <input type="date" id="cid" name="cid" required><br>
+
+                    <label for="check-out">Check Out Date:</label>
+                    <input type="date" id="cod" name="cod" required><br>
+
+                    <label for="dog">Dogs:</label>
+                    <input type="number" id="dog" name="dog" min="1"required><br>
+
+                    <label for="pup">Pups:</label>
+                    <input type="number" id="pup" name="pup" min="0" required><br>
+
+                    <label for="bed">Beds:</label>
+                    <input type="number" id="bed" name="bed" min="1" required><br>
+
+                    <button type="submit" >Book Now</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <script src="petscript.js"></script>
+    </body>
+</html>
