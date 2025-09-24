@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-p{
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+    font-size: 40px;
+    font-family: fantasy;
+}
+
+nav{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    margin-right: 0 1px;
+}
+
+nav a:hover{
+    background-color: #963939;
+}
+
+.container{
+    background-image: url("images/image03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.img-box{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100px;
+    border: 2px solid white;
+    text-align: center;
+    max-width: 1000px;
+}
+.img-box button{
+    padding: 5px 50px;
+    background-color: white;
+    border: 2px solid red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.img-box button a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.img-box button:hover{
+      background-color: red;
+      color: white;
+}
+
+footer {
+    min-width: 300px;
+    background-color: black;
+    /*justify-content: space-between;*/
+    padding: 0;
+    color: white;
+    margin: 0;
+}
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10%,auto));
+    gap: 10%;
+    padding: 20px;
+    margin: 0;
+    justify-content: space-around; 
+}
+
+.image-box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.image-box img{
+    height: 200px;
+    width: auto;
+    border:2px solid red;
+    border-radius: 100%;
+    margin-bottom: 8px;
+}
+.footer-section ul{
+    list-style: none;
+    /*justify-content: right;*/
+    padding: 0;
+    margin: 0;
+}
+.footer-section a{
+    text-decoration: none;
+    color: white;
+}
+.footer-section li{
+    margin-top: 8px;
+    margin-left: 0;
+}
+.footer-section a:hover{
+    color: #963939;
+}
+.footer-section p{
+    font-style: italic;
+    font-family: 'Satisfy', cursive;
+}
+.info-icons{
+    /*align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;*/
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+.info-icons span {
+    object-fit: contain;
+}
+.info-box{
+    text-align: left;
+
+}
+.info-icons{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.info-box h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-footer {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("images/css_sprites.png");
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+    /*margin-bottom: 15px;*/
+    border-radius: 100%;
+    background-size: 320px 220px;
+}
+
+.location-icon {
+    background-position: -67px -20px; 
+}
+
+.phone-icon {
+    background-position: -213px -20px; 
+}
+
+.mail-icon {
+    background-position: -263px -20px; 
+}
+.map-box{
+    text-align: center;
+}
+/* Media query for smaller screens (e.g., tablets or smaller) */
+@media (max-width: 768px) {
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .image-box, .info-box, .map-box, .about-box {
+        width: 80%;
+        text-align: center;
+    }
+
+    .info-box {
+        text-align: left;
+    }
+
+    .info-icons {
+        justify-content: center;
+    }
+}
+.footer{
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #333;    
+}
+
+.ser-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40%,auto));
+    gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ser1_image-box{
+    text-align: left;
+
+}
+.ser1_image-box img{
+    height: 200px;
+    width: auto;
+    border: 4px solid rgb(255, 255, 5);
+}
+.ser1_image-box button{
+    align-items: flex-start;
+    padding: 5px 60px;
+    background-color: rgb(224, 168, 12);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+}
+.ser1_image-box a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+.form-container{
+    background-image: url("images/image13.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px 20px;
+    border: 4px solid #12ab12;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    text-align: left;
+}
+.form-box h3 {
+    padding-bottom: 10px;
+    color: yellow;
+    text-transform: uppercase;
+}
+.fancy::first-letter{
+    font-size: 30px;
+}
+.form-box hr{
+    background-color: white;
+    height: 4px;
+    width: 40%;
+    
+}
+.form-box label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.form-box input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.form-box button {
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border: 3px solid red;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px auto;
+    display: block;
+}
+.form-box button:hover{
+    background-color: red;
+}
+
+.about-container{
+    display: flex;
+    /*flex-direction: column;*/
+    padding-top: 87px; 
+    padding-bottom: 20px;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.about-box img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+.about-box h2{
+    text-transform: uppercase;
+    padding-top: 20px;
+    border-bottom: 4px solid black;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.fancy::first-letter{
+    font-size: 30px;
+}
+.about-box hr{
+    background-color: black;
+    height: 4px;
+    width: 50%;
+    margin: 10px auto ;
+}
+.about-box p{
+    padding: 10px;
+    line-height: 1.8;
+}
+.button{
+    padding: 20px;
+}
+.button a{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding:5px 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 12px;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.button a:hover{
+    background-color: #12ab12;
+    cursor: help;
+}
+
+.icon-about {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("images/social_media.png");
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    border-radius: 100%;
+    border: none;
+    background-size: 640px 310px;
+}
+
+.facebook-icon {
+    background-position: -40px -30px; 
+}
+
+.instergram-icon {
+    background-position: -186px -30px; 
+}
+
+.youtube-icon {
+    background-position: -478px -30px; 
+}
+.whatsapp-icon{
+    background-position: -186px -170px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; 
+        text-align: center;
+        min-height: auto; 
+        align-items: center;
+    }
+
+    .about-image img {
+        max-height: 400px; 
+        margin-bottom: 20px; 
+    }
+
+    .about-text {
+        max-width: 100%; 
+        
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px; 
+    }
+}
+
+.reviews {
+    background-color: gray;
+    background-size: cover;
+    text-align: left;
+    padding: 0 100px ;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    margin-top: 120px;
+}
+
+.reviews h2 {
+    color: #d4af37; 
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid white;
+    display: inline-flex;
+    padding-bottom: 5px;
+}
+
+
+
+
+.custom-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.custom-box{
+    background-color: white;
+    height: 100vh;
+    padding: 0 100px;
+    padding-top: 75px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.custom-box img{
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+.custom-box h3{
+    padding-bottom: 15px;
+}
+.custom-box p{
+    line-height: 2.4;
+    padding-bottom: 15px;
+}
+.contact-container{
+    background-image: url("images/image08.jpg");         
+    background-repeat: repeat-x;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+.contact-box {
+    background-color: rgb(21, 179, 227);
+    padding: 50px 10px;
+    border-radius: 5px;
+    width: 1000px;
+    height: 500px;
+    text-align: left;
+    padding-bottom: 100px;
+}
+.contact-box h2{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form textarea:hover{
+    background-color: #e9f14f;
+    border: 2px solid black;
+
+}
+form button{
+    width: 100%;
+    background-color: #d4af37;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    box-sizing: border-box;
+    letter-spacing: 5px;
+}
