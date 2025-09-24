@@ -114,7 +114,6 @@ footer {
 }
 .footer-section ul{
     list-style: none;
-    /*justify-content: right;*/
     padding: 0;
     margin: 0;
 }
@@ -163,7 +162,7 @@ footer {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-image: url("images/css_sprites.png");
+    background-image: url("css_sprites.png");
     background-repeat: no-repeat;
     margin-right: 8px;
     vertical-align: middle;
@@ -248,7 +247,7 @@ footer {
     font-size: 12px;
 }
 .form-container{
-    background-image: url("images/image13.jpg");
+    background-image: url("image13.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -306,7 +305,6 @@ footer {
 
 .about-container{
     display: flex;
-    /*flex-direction: column;*/
     padding-top: 87px; 
     padding-bottom: 20px;
     justify-content: center;
@@ -369,7 +367,7 @@ footer {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url("images/social_media.png");
+    background-image: url("social_media.png");
     background-repeat: no-repeat;
     margin-right: 8px;
     vertical-align: middle;
@@ -476,7 +474,7 @@ footer {
     padding-bottom: 15px;
 }
 .contact-container{
-    background-image: url("images/image08.jpg");         
+    background-image: url("image08.jpg");         
     background-repeat: repeat-x;
     height: 100vh;
     display: flex;
@@ -529,3 +527,4 @@ form button{
     letter-spacing: 5px;
 
 }
+
